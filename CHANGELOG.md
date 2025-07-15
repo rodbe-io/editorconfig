@@ -1,3 +1,9 @@
+## [1.2.0](https://github.com/rodbe-io/editorconfig/compare/v1.1.0...v1.2.0) (2025-07-15)
+
+### Features
+
+* remove unused file + trigger ci ([2f08269](https://github.com/rodbe-io/editorconfig/commit/2f0826959a75e73113faec760e6ea2c64f7c93cd))
+
 ## 1.0.0 (2025-07-15)
 
 ### Features
