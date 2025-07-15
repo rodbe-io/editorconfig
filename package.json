@@ -1,0 +1,86 @@
+{
+  "name": "@rodbe/editorconfig",
+  "version": "1.0.0",
+  "description": "Shareable config",
+  "keywords": [
+    "front-end",
+    "RBX",
+    "typescript"
+  ],
+  "homepage": "https://github.com/rodbe-io/editorconfig",
+  "bugs": {
+    "url": "https://github.com/rodbe-io/editorconfig/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodbe-io/editorconfig.git"
+  },
+  "license": "MIT",
+  "author": "Rodbe",
+  "type": "module",
+  "files": [
+    ".editorconfig",
+    "scripts/copy.js"
+  ],
+  "scripts": {
+    "build": "echo 'No needed'",
+    "commit": "git-cz",
+    "commitlint": "commitlint --edit",
+    "eslint:config": "echo 'No needed'",
+    "eslint:fix": "echo 'No needed'",
+    "postinstall": "node scripts/copy.js",
+    "prepare": "husky || true",
+    "release": "semantic-release",
+    "start": "echo 'No needed'",
+    "test:unit": "echo 'No needed'",
+    "ts:check": "echo 'No needed'",
+    "ts:config": "echo 'No needed'"
+  },
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/cz-commitlint"
+    }
+  },
+  "dependencies": {
+    "@rodbe/fn-utils": "^1.5.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
+    "@commitlint/cz-commitlint": "^19.8.1",
+    "@commitlint/format": "^19.8.1",
+    "@commitlint/types": "^19.8.1",
+    "@rodbe/prettier-config": "^1.4.0",
+    "@semantic-release/changelog": "6.0.3",
+    "@semantic-release/commit-analyzer": "^13.0.1",
+    "@semantic-release/git": "10.0.1",
+    "@semantic-release/github": "^11.0.3",
+    "@semantic-release/npm": "12.0.2",
+    "@semantic-release/release-notes-generator": "^14.0.3",
+    "@types/node": "^24.0.12",
+    "commitizen": "^4.3.1",
+    "conventional-changelog-conventionalcommits": "9.0.0",
+    "husky": "^9.1.7",
+    "nano-staged": "^0.8.0",
+    "prettier": "^3.6.2",
+    "prettier-plugin-curly": "^0.3.2",
+    "prettier-plugin-packagejson": "^2.5.18",
+    "semantic-release": "24.2.6"
+  },
+  "peerDependencies": {
+    "prettier": ">=3.0.0"
+  },
+  "packageManager": "pnpm@10.5.2",
+  "engines": {
+    "node": ">= 18.18.2",
+    "npm": ">= 8.11.0",
+    "pnpm": ">= 9.15.2"
+  },
+  "volta": {
+    "node": "23.10.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "enginesStrict": true
+}
